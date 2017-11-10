@@ -9,15 +9,12 @@ ul {
 h1 {
   color: purple;
 }
-
 </style>
 
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-6">
-
       <h1>Amazing Cocktails of the World</h1>
-
       <ul>
         <% @cocktails.each do |cocktail| %>
         <li>
@@ -26,8 +23,8 @@ h1 {
         </strong>
       </li>
       <% end %>
+      <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-danger" %>
     </ul>
-
   </div>
 </div>
 </div>

@@ -18,8 +18,15 @@ h1 {
       <h1> <%= @cocktail.name %> </h1>
       <ul>
         <li>
+          <% @cocktail.doses.each do |dose| %>
+          <%= dose.description %> of <%= dose.ingredient.name %>
         </li>
+        <% end %>
+        <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+        <%= link_to "Back to all the cocktails", cocktails_path, class: "btn btn-danger" %>
       </ul>
     </div>
   </div>
 </div>
+
+
