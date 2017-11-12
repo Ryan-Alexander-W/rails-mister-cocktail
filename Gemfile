@@ -7,6 +7,8 @@ end
 
 
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 # heroku
 ruby '2.3.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -30,8 +32,9 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
-gem 'cloudinary'
-gem 'carrierwave', '~> 0.11.2'
+
+
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
